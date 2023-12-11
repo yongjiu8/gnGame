@@ -80,7 +80,7 @@ def init():
         'iChartId': initConfig['iChartId'],
         'iSubChartId': initConfig['iSubChartId'],
         'sIdeToken': initConfig['sIdeToken'],
-        'sArea': '2',
+        'sArea': sArea,
         'sPlatId': sPlatId,
         'acctype': acctype,
         'e_code': '0',
@@ -102,7 +102,7 @@ def startGame():
         'iChartId': startGameConfig['iChartId'],
         'iSubChartId': startGameConfig['iSubChartId'],
         'sIdeToken': startGameConfig['sIdeToken'],
-        'sArea': '2',
+        'sArea': sArea,
         'sPlatId': sPlatId,
         'acctype': acctype,
         'e_code': '0',
@@ -128,7 +128,7 @@ def postScore(score=400):
         'iChartId': sumbitGameScore['iChartId'],
         'iSubChartId': sumbitGameScore['iSubChartId'],
         'sIdeToken': sumbitGameScore['sIdeToken'],
-        'sArea': '2',
+        'sArea': sArea,
         'sPlatId': sPlatId,
         'acctype': acctype,
         'score': score,
@@ -166,6 +166,10 @@ if __name__ == '__main__':
     分区 wx qq
     '''
     acctype = 'qq'
+    '''
+    分区 2=qq 1=微信
+    '''
+    sArea = '2'
     '''
     提交的分数
     '''
