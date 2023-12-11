@@ -32,6 +32,10 @@
     '''
     acctype = 'qq'
     '''
+    分区 2=qq 1=微信
+    '''
+    sArea = '2'
+    '''
     提交的分数
     '''
     sumbitScore = 400
